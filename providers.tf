@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     google = {
-      source = "hashicorp/google"
+      source  = "hashicorp/google"
       version = "3.64.0"
     }
   }
@@ -10,7 +10,6 @@ terraform {
 # Configura o Provider Google Cloud com o Projeto
 provider "google" {
 
-  credentials = file("/vagrant/svc.json")
 
   project = "lab-devops-cloud-grupo15"
   region  = "us-west1"

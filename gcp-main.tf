@@ -4,8 +4,8 @@ resource "google_compute_instance" "firstvm" {
   machine_type = "n1-standard-1"
   zone         = "us-central1-c"
 
-# Insira essa linha após zone 
-  tags         = ["labdevops"]
+  # Insira essa linha após zone 
+  tags = ["labdevops"]
 
   # Defini a Imagem da VM
   boot_disk {
